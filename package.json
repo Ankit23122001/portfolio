@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "preinstall": "npm install --legacy-peer-deps"
+    "install": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
