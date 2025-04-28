@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my-portfolio  # Replace with your project name
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist  # Use "./build" for Create React App
