@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-portfolio  # Change to your project name
+    name: ankit-portfolio  # Change to your project name
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist  # Use `./build` for Create React App
