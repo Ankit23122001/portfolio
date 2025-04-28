@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-portfolio  # Replace with your project name
+    name: my-portfolio
     env: static
-    buildCommand: npm run build
-    staticPublishPath: ./dist  # Use "./build" for Create React App
+    buildCommand: npm install && npm run build  # Simplified now that conflict is resolved
+    staticPublishPath: ./dist  # or `./build` for Create React App
