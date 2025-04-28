@@ -35,8 +35,9 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     emailjs
-      .send('service_1dd4spi',
-        'template_836ozfi',
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Ankit Kumar",
@@ -44,7 +45,7 @@ const Contact = () => {
           to_email: "ankitshrivastav359@gmail.com",
           message: form.message,
         },
-        'puyo936RR9-TObaju'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
